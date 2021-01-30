@@ -1,0 +1,47 @@
+module.exports = {
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    project: './tsconfig.json',
+  },
+  root: true,
+  plugins: ['@typescript-eslint', 'react', 'react-hooks'],
+  extends: ['plugin:@typescript-eslint/recommended', '@react-native-community', 'eslint:recommended', 'plugin:react/recommended'],
+  env: {
+    es6: true,
+    node: true,
+    jest: true,
+  },
+  rules: {
+    '@typescript-eslint/no-var-requires': 'off',
+    '@typescript-eslint/restrict-plus-operands': 'off',
+    'no-var': 'off',
+    '@typescript-eslint/indent': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/no-non-null-assertion': 'off',
+    '@typescript-eslint/camelcase': 'off',
+    '@typescript-eslint/class-name-casing': 'off',
+    '@typescript-eslint/no-empty-interface': 'off',
+    '@typescript-eslint/interface-name-prefix': 'off',
+    '@typescript-eslint/explicit-member-accessibility': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-use-before-define': 'off',
+    '@typescript-eslint/prefer-interface': 'off',
+    'no-extra-boolean-cast': 'off',
+    'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
+    'react-hooks/exhaustive-deps': 'off', // Checks effect dependencies,
+    'react/jsx-no-bind': 'warn',
+    'react/display-name': 'off',
+    'require-yield': 'off',
+    'react/no-unescaped-entities': 'off',
+    'eol-last':'off',
+    '@typescript-eslint/unbound-method': 'off',
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    'prettier/prettier': 0,
+    "react/prop-types": 0
+  },
+};
