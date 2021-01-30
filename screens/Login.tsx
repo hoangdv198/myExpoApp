@@ -8,10 +8,12 @@ import {
   Dimensions,
   TextInput,
 } from 'react-native';
+import { useTranslation } from 'react-i18next';
 
 const { width, height } = Dimensions.get('screen');
 
 const Login = () => {
+  const [t] = useTranslation();
   return (
     <View style={styles.container}>
       <ImageBackground
@@ -20,7 +22,7 @@ const Login = () => {
         blurRadius={10}>
         <View style={styles.containerLoginView}>
           <View style={styles.containerForm}>
-            <Text style={styles.textTilte}>Login</Text>
+            <Text style={styles.textTilte}>{t('login')}</Text>
             <TextInput />
           </View>
         </View>

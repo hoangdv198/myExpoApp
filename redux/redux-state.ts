@@ -1,6 +1,6 @@
 import Immutable from 'immutable';
 import { ITypeReduxPendingState } from './redux-type-saga';
-import { IImmutableMap } from './interface';
+import { IImmutableMap } from '../common/interface';
 
 // Store
 export interface IStore extends ITypeReduxPendingState {
